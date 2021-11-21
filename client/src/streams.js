@@ -22,7 +22,8 @@ function Streams() {
       let baseURL = "https://api.twitch.tv/helix/games?";
       let queryParams = "";
       gameIDs.map((id) => {
-        return (queryParams = queryParams + `id=${id}&`);
+        queryParams = queryParams + `id=${id}&`
+        return queryParams;
       });
 
       let finalURL = baseURL + queryParams;
@@ -33,7 +34,8 @@ function Streams() {
         stream.gameName = "";
         gameNameArray.map((name) => {
           if (stream.game_id === name.id) {
-            return (stream.gameName = name.name);
+            stream.gameName = name.name;
+            return stream.gameName;
           }
         });
         let newURL = stream.thumbnail_url
@@ -71,15 +73,3 @@ function Streams() {
 }
 
 export default Streams;
-
-/*
-<div className='card-body'>
-              <h6 className='card-title'>{channel.user_name}</h6>
-              <p className='card-text'>{channel.gameName}</p>
-              <div className='card-text'>
-                {channel.viewer_count}
-                <span className='text-primary'> Live viewers</span>
-              </div>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-*/

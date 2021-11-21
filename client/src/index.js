@@ -14,21 +14,21 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "shards-ui/dist/css/shards.min.css";
 
 
-function App(){
+function App() {
   return (
     <div className="App container-fluid">
-    <Menu/>
-    <UserProvider>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Streams/>}/>
-        <Route path="/home" element={<Home/>}/>
-      </Routes>
-    </BrowserRouter>
-    </UserProvider>
+      <Menu />
+      <UserProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Streams />} />
+            <Route path="/home" element={<Home />} />
+          </Routes>
+        </BrowserRouter>
+      </UserProvider>
     </div>
-);
+  );
 }
 
 
-ReactDOM.render(<App />,document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
