@@ -2,7 +2,6 @@ import React from 'react';
 const { Navbar, Container, Nav, Button } = require("react-bootstrap")
 
 const IconButton = () => {
-    // https://api.twitch.tv/kraken/oauth2/authorize?response_type=code&client_id=%5BYOUR_PUBLIC_CLIENT_ID%5D&redirect_uri=%5BRETURN_URL%5D&scope=%5BSCOPES_REQUIRES%5D
     return (
         <button className='btn btn-success my-2 my-sm-0'>Login with Twitch</button>
     );

@@ -3,8 +3,6 @@ import './index.css';
 import api from './api'
 import { Container } from 'react-bootstrap';
 
-import "./index.css";
-
 function Streams() {
 
   const [channels, setChannels] = useState([])

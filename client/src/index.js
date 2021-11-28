@@ -6,7 +6,6 @@ import UserProvider from "./UserProvider";
 import Home from "./pages/Home";
 import Profile from "./pages/Profile";
 import ReactDOM from "react-dom";
-import history from "./history";
 import Menu from "./menubar";
 
 import "./index.css";
